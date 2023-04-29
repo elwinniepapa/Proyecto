@@ -1,0 +1,74 @@
+---------------------------------------
+Add new player
+---------------------------------------
+Add new player to DB
+
+[POST]: /api/player
+
+curl --location 'http://localhost:8080/api/player' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "username": "winnie3",
+    "password": "Password1234",
+    "email": "winnie3@gmail.com"
+}'
+
+---------------------------------------
+Get all players
+---------------------------------------
+Get all player from DB
+
+[GET]: /api/player
+
+curl --location 'http://localhost:8080/api/player/'
+
+
+---------------------------------------
+Get player by id
+---------------------------------------
+Get player info by id
+
+[GET]: /api/player/"id to search"
+
+curl --location 'http://localhost:8080/api/player/idsearch'
+
+
+---------------------------------------
+Update player
+---------------------------------------
+Update player by id
+
+[PUT]: /api/player/"id to update"
+
+curl --location --request PUT 'http://localhost:8080/api/player/idupdate' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "username": "winnie1",
+    "password": "password1234",
+    "email": "winnie1@gmail.com",
+    "idsuperhero": 300
+}'
+
+
+---------------------------------------
+Delete player
+---------------------------------------
+Delete player by id
+
+[DELETE]: /api/player/"id to delete"
+
+curl --location --request DELETE 'http://localhost:8080/api/player/iddelete'
+
+
+---------------------------------------
+Fight with random opponent
+---------------------------------------
+Write your username and get random opponent to fight
+
+[POST]: /api/fight
+
+curl --location 'http://localhost:8080/api/fight/' \
+--header 'Content-Type: application/json' \
+--data '{
+    "username": "winnie0"
+}'
