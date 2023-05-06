@@ -1,7 +1,7 @@
 const addPlayerService = require("../services/player/addPlayerService");
 const deletePlayerService = require("../services/player/deletePlayerService");
-const getAllPlayerService = require("../services/player/getAllPlayerService.JS");
-const getPlayerByIDService = require("../services/player/getPlayerByIDService.JS");
+const getAllPlayerService = require("../services/player/getAllPlayerService");
+const getPlayerByIDService = require("../services/player/getPlayerByIDService");
 const updatePlayerService = require("../services/player/updatePlayerService");
 
 

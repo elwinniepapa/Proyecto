@@ -8,7 +8,7 @@ const deletePlayerService = async (request) => {
             if(deletePlayer.deletedCount === 0){
                 return { message: "El jugador no se encontró", statusCode: 404 }
             }
-            return { message: "Jugador eliminado con éxito", statusCode: 201 };
+            return { message: "Jugador eliminado con éxito", statusCode: 204 };
         }
         return { message: "El jugador no se encontró" };
     }
